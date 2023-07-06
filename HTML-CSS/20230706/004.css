@@ -1,0 +1,30 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Gugi&family=Hi+Melody&family=Montserrat:wght@100&display=swap');
+
+
+
+.box1 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 3px 3px 20px rgb(209, 165, 129);
+    border-radius: 20px;
+}
+
+p {
+    font-family: "Hi Melody";
+    text-align: left;
+    text-shadow: 1px 1px 3px rgb(213, 209, 161);
+}
+
+span {
+    font-size: 40px;
+    text-shadow: 1px 1px 3px rgb(224, 221, 187);
+}
+

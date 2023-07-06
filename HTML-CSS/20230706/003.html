@@ -12,9 +12,26 @@
             /* font-weight: bold; */
             font-size: 16px;
             text-align: left;
-            vertical-align: top;
+            /* vertical-align: top;
             line-height: 1.6;
-            letter-spacing: 1px;
+            letter-spacing: 1px; */
+            text-indent: 10px;
+
+            /* 1줄 밑줄임 처리 */
+            /* white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; */
+
+            /* 여러줄 말줄임  : 스니펫>css 타이핑해서 팡리 만들기>밑에 코드 붙이기> preffix: ell*/
+            /* overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; */
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            font-style: italic;
         }
 
         .fes7 {
@@ -37,7 +54,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid tempore dignissimos, quidem ad repudiandae laborum sequi doloremque unde ipsam quibusdam ea similique sapiente molestiae. Est alias quaerat iusto laborum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid tempore dignissimos, quidem ad repudiandae laborum sequi doloremque unde ipsam quibusdam ea similique sapiente molestiae. Est alias quaerat iusto laborum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid tempore dignissimos, quidem ad repudiandae laborum sequi doloremque unde ipsam quibusdam ea similique sapiente molestiae. Est alias quaerat iusto laborum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid tempore dignissimos, quidem ad repudiandae laborum sequi doloremque unde ipsam quibusdam ea similique sapiente molestiae. Est alias quaerat iusto laborum!</p>
 
     <p class="fes7">Frontend School7 ddd aaa ggg</p>
     <p class="tx-shadow">Text Shadow</p>
