@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Gamja+Flower&family=Gugi&family=Italianno&family=Montserrat:wght@100&display=swap');
+
+@font-face {
+    font-family: 'hsp';
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hsp1 {
+    font-family: hsp;
+}
+
+
+body {
+    color: red;
+}
+
+/* h1 {
+    color: rgba(77, 63, 266, 0.7);
+} */
+
+h1 {
+    color: inherit;
+    /* border: 2px solid #ddd; */
+    font-family: 'Montserrat';
+}
+
+strong {
+color: currentColor;
+}
+
+h2 {
+    color: royalblue;
+    font-family: "East Sea Dokdo";
+}
+
+h3 {
+    color: #3c3c3c;
+}
+
+.lorem1 {
+    font-family: Gugi;
+}
+
+.lorem2 {
+    font-family: Italinno;
+}

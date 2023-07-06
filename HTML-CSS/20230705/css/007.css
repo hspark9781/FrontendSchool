@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Italianno&family=Montserrat:wght@100&display=swap');
+
+* {
+    font-family: Gamja Flower;
+}
+
+/* 아이디 선택자 */
+#name {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* 클래스 선택자 */
+.my {
+    color: olivedrab;
+}
+
+.my+p {
+    color: rgb(127, 172, 255);
+}
+
+.student {
+    background-color: cadetblue;
+}
+
+.text {
+    border-left: 2px solid rgb(194, 194, 194);
+    padding-left: 5px;
+}
+
+.sect2 strong {
+    background-color: yellow;
+}
+
+.my+p,
+.text {
+    background-color: greenyellow;
+}
+
+.sect1>* {
+    background-color: aquamarine;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a태그</title>
+</head>
+<style>
+    div {
+        height: 100vh;
+    }
+
+    section {
+        height: 100vh;
+        background-color: skyblue;
+    }
+</style>
+<body>
+    <div>
+        <!-- 주소기입할때 절대경로로! -->
+        <a href="https://www.naver.com/">네이버로 이동합니다.</a> <br>
+        <a href="//www.naver.com">네이버로 이동합니다.</a><br>
+        <!--상대경로-->
+        <a href="./004.html">004파일로 이동합니다(상대경로)</a> <br>
+        <a href="./004.html" download>004파일 다운로드</a> <br>
+        <!--//상대경로-->
+        <a href="#section1">section1로 이동합니다.</a> <br> <!-- 해당 id로 이동-->
+        <a href="tel:010-0000-0000">010-0000-0000</a> <br>
+        <a href="mailto:msa9781@naver.com">mailto:msa9781@naver.com</a>
+    </div>
+    <section id="section1">
+        section
+    </section>
+    
+</body>
+</html>
