@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스꾸미기</title>
+    <style>
+        p {
+            margin: 0;
+        }
+        
+        .box1 {
+            width: 100px;
+            height: 30px;
+            border: 5px solid #000;
+            text-align: center;
+            background: #343F50;
+            color: white;
+            overflow: hidden;
+        }
+
+        .box1 p {
+            border: 5px solid #4a5568;
+            border-width: 5px 0 0 5px;
+            height: 100%;
+            padding: 2px  0;
+        }
+
+        /*태그 하나로 : box-shadow*/
+        .box2 {
+            width: 108px;
+            height: 44px;
+            border: 5px solid #000;
+            text-align: center;
+            background-color: #343F50;
+            color: white;
+            box-shadow: inset 5px 5px 0 0  #4a5568;
+            padding-top: 9px;
+            box-sizing: border-box;
+        }
+
+        /*태그 하나로 : outline*/
+        .box3 {
+            width: 108px;
+            height: 44px;
+            text-align: center;
+            background-color: #343F50;
+            color: white;
+            box-sizing: border-box;
+            padding-top: 10px;
+            border: 5px solid #000;
+            box-shadow: inset 5px 5px 0 0 #4a5568;
+        }
+
+        .box4 {
+            background-color: skyblue;
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, #834df6 0%, #336df2 100%);
+            color: white;
+            border-radius: 50px;
+            border: 5px dashed #e6d6ff;
+            background-clip: padding-box;
+            /* outline은 focus같은 의도가 있을 때는 사용하지만 기본 디자인에는 잘 사용하지 않는다. */
+
+        }
+
+        .box5 {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 0 50px 50px 50px;
+            border: 5px solid #ddd;
+            box-shadow: 5px 5px 5px 0 #eee;
+        }
+
+        .btn1 { 
+            padding: 4px 20px;
+            background-color: #343F50;
+            color: white;
+            border: 5px solid #000;
+            box-shadow: inset 5px 5px 0 0 #4a5568;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Hello✋</p>
+    </div>
+    <br>
+    <p class="box2">Hello✋</p>
+    <br>
+    <p class="box3">Hello✋</p>
+    <br>
+    <!-- 고정값으로 주지 말고 크기에 따라 변할수 있는(예를 드련 패딩) -->
+    <button type="button" class="btn1">
+        Hello✋
+    </button>
+    <br>    
+    <p class="box4">Hello✋</p>
+    <p class="box5">Hello✋</p>    
+</body>
+</html>
