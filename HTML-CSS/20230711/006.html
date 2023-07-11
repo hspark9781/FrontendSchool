@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .container {
+            height: 300px;
+            display: flex;
+            /* 가로 세로 간격 */
+            gap: 10px 40px; 
+            /* flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            background-color: #ddd;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* wrap을 사용했을때는 align-items 대신에 content */
+            align-content: center;
+        }
+        .item {
+            background-color: skyblue;
+            flex-basis: 200px;
+            /* height: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item A</div>
+        <div class="item">item B</div>
+        <div class="item">item C</div>
+        <div class="item">item D</div>
+        <div class="item">item A</div>
+        <div class="item">item B</div>
+        <div class="item">item C</div>
+        <div class="item">item D</div>
+        <div class="item">item A</div>
+        <div class="item">item B</div>
+        <div class="item">item C</div>
+        <div class="item">item D</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    </title>
+    <style> 
+        header {
+            background-color: skyblue;
+            height: 100px
+        }
+
+        section,
+        aside {
+            flex-basis: 0;
+        }
+
+        section {
+            background-color: salmon;
+            flex-grow: 3;
+        }
+
+        aside {
+            background-color: gold;
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: slateblue;
+            height: 70px;
+        }
+
+        .container {
+            display: flex;
+            height: 400px;
+        }
+
+        .a1 {
+            gap: 50px 50px;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="a1">
+        <header>header</header>
+        <div class="container">
+            <section>section</section>
+            <aside>aside</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>
