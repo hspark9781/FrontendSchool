@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 변수</title>
+    <style>
+        /* :가상변수 */
+        :root {
+            --main-color: royalblue;
+            --pane-padding: 0.5em 2em;
+            --border-radius: 0.4em;
+        }
+        /* // */
+
+        /* 지역변수 */
+        .dark {
+            --background-color: #000;
+            --color1: #fff;
+        }
+
+        .light {
+            --background-color : #fff;
+            --color1: #000;
+        }
+        /* // */
+        button {
+            --borde-width: 1px 2px 3p 4px;
+            color: var(--main-color, blue);
+            border-color: var(--main-color, blue);
+            padding: var(--pane-padding);
+        }
+
+        p {
+            /* color: var(--main-color); */
+            border-style: solid;
+            border-color: var(--main-color);
+        }
+
+        section {
+            --color2: red;
+            background-color: var(--background-color);
+            color: var(--color1);
+        }
+    </style>
+</head>
+<body>
+    <div class="light">
+        <section>
+            <button type="button">버튼</button>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at accusamus rem molestias facilis ad quo necessitatibus ipsam fugiat assumenda? Dolores tempora enim quisquam in fugiat! Molestias unde vero adipisci
+            </p>
+        </section>
+    </div>
+    <div class="dark">
+        <section>
+            <button type="button">버튼</button>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at accusamus rem molestias facilis ad quo necessitatibus ipsam fugiat assumenda? Dolores tempora enim quisquam in fugiat! Molestias unde vero adipisci
+            </p>
+        </section>
+    </div>
+    
+</body>
+</html>

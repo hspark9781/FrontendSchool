@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        
+
+        button:enabled:hover {
+            background-color: blue;
+        }
+        /* 후위우선으로 hover랑 active랑 같이 쓸거면 엑티브를 밑으로 */
+        button:enabled:active {
+            background-color: red;
+        }
+        /* 마우스 클릭시에도 보임 */
+        .btn1:focus {
+            border: 5px solid green;
+        }
+
+        /* 마우스 클릭시에는 안보임 */
+        .btn2:focus-visible {
+            border: 5px solid green;
+        }
+
+        /*focus시 요소의 부모에 스타일 지정*/
+        div:focus-within {
+            background-color: skyblue;
+        }
+
+        button:enabled {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <button class="btn1" type="button" disabled>버튼</button>
+        <button class="btn2" type="button">버튼</button>
+    </div>
+</body>
+</html>
