@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-perspective</title>
+</head>
+<style>
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 400px;
+        height: 100px;
+        border: 3px dashed royalblue;
+        display: flex;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(65, 105, 225, 0.8);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .box:nth-child(odd) {
+        background-color: rgb(255, 215, 0, 0.8);
+    }
+
+    /* 3d */
+
+    .container {
+        perspective: 200px;
+        perspective-origin: 50% 0;
+    }
+    .box {
+        transform: rotateY(90deg);
+    }
+
+    .box:nth-child(2) {
+        /* perspective기준으로 자리잡기 때문에 먼저 적어줘야 한다. */
+        transform: perspective(100px) rotateY(90deg);
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+    </div>
+</body>
+</html>
