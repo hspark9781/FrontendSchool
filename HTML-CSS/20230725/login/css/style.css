@@ -1,0 +1,213 @@
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+}
+
+ul,
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+a {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    position: absolute;
+    left: 16px;
+}
+
+button {
+    border: 0;
+    background-color: inherit;
+}
+
+.main {
+    width: 520px;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    margin: 100px auto;
+}
+
+.login-text {
+    text-align: center;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 18px;
+}
+
+.content-text {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.btn-group {
+    margin: 0 auto;
+}
+
+.form {
+    width: 472px;
+    margin: 0 auto;
+}
+
+.user-id,
+.user-pw {
+    width: 472px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #767676;
+    background: #FFF;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    padding: 15px 0;
+}
+
+.user-id {
+    margin-bottom: 10px;
+}
+
+.user-pw {
+    margin-bottom: 17px;
+}
+
+.login {
+    width: 472px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    background: #2F80ED;
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+
+.join-find {
+    font-size: 14px;
+    color: #767676;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.login-list {
+    width: 472px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #767676;
+    text-align: center;
+    margin: 0 auto;
+    border-top: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    padding-top: 29px;
+    position: relative;
+}
+
+.login-list::before {
+    content: "또는";
+    display: block;
+    width: 52px;
+    font-size: 14px;
+    color: #767676;
+    position: absolute;
+    top: -0.7em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.login-list li {
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.login-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.login-list li::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    left: 10px;
+}
+
+.google {
+    border: 1px solid #767676;
+}
+
+.google::before {
+    background: url("../images/Google__G__Logo\ 1.png") 0 0 no-repeat;
+}
+
+.facebook {
+    border: 1px solid #2D9CDB;
+}
+
+.facebook::before {
+    background: url("../images/facebook.png") 0 0 no-repeat;
+}
+
+.naver {
+    border: 1px solid #00BF18;
+}
+
+.naver::before {
+    background: url("../images/naver-logo.png") 0 0 no-repeat;
+}
+
+.kakao {
+    border: 1px solid #F2C94C;
+}
+
+.kakao::before {
+    background: url("../images/message-circle.png") 0 0 no-repeat;
+}
+
+
+
+
