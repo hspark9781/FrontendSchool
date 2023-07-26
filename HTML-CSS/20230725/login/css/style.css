@@ -25,7 +25,6 @@ li{
     margin: 0;
 }
 
-
 h1,
 h2,
 h3,
@@ -84,6 +83,11 @@ button {
 .form {
     width: 472px;
     margin: 0 auto;
+}
+
+.save-info {
+    color: #767676;
+    font-weight: 500;
 }
 
 .user-id,
