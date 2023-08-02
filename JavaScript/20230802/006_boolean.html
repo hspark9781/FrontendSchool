@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <script>
+        // true(참, 1), false(거짓, 0)
+        // &&(and 논리곱), ||(or 논리합), !(not 부정)
+        // &(and 비트논리곱), |(or 비트논리합), ~(not 비트부정)
+
+        // and나 or 뒤를 볼 필요가 없으면 보지 않습니다!
+        // and(논리곱)
+        console.log(true && true);
+        console.log(true && false);
+        console.log(false && true);
+        console.log(false && false);
+        console.log("가" && "나");
+        console.log("" && "나");
+        Boolean("가");
+        !!"가";
+
+        // or(논리합)
+        console.log(true || true);
+        console.log(true || false);
+        console.log(false || true);
+        console.log(false || false);
+
+        let userName = "leehojun";
+        console.log(userName || "이름없음");
+
+        let username = ''
+        console.log(username || '이름없음')
+
+        // not(부정)
+        console.log(!true);
+        console.log(!false);
+
+        // 매우 중요하지 않습니다. 실무에서는 거의 사용하지 않습니다.
+        // 알고리즘 문제에서 간혹 등장합니다.
+        console.log(3 & 5);
+        // 0011
+        // 0101
+        // ------
+        // 0001
+        console.log(3 | 5);
+        // 0011
+        // 0101
+        // ------
+        // 0111
+
+        // https://school.programmers.co.kr/learn/courses/30/lessons/17681
+        (9 | 30)
+        .toString(2)
+        .replaceAll("0", " ")
+        .replaceAll("1", "#");
+    </script>
+</body>
+</html>

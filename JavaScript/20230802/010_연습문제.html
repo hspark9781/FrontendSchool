@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let answer = 0;
+        let inputValue = 1234;
+        // 1번째 풀이
+        inputValue = "" + inputValue;
+        answer += +inputValue[0];
+        answer += +inputValue[1];
+        answer += +inputValue[2];
+        answer += +inputValue[3];
+
+        // 2번째 풀이
+        inputValue = inputValue.toString();
+        answer += parseInt(inputValue[0]);
+        answer += parseInt(inputValue[1]);
+        answer += parseInt(inputValue[2]);
+        answer += parseInt(inputValue[3]);
+
+        //3번째 풀이
+        answer += inputValue  % 10;
+        inputValue = parseInt(inputValue / 10);
+
+        answer += inputValue  % 10;
+        inputValue = parseInt(inputValue / 10);
+
+        answer += inputValue  % 10;
+        inputValue = parseInt(inputValue / 10);
+
+        answer += inputValue  % 10;
+        inputValue = parseInt(inputValue / 10);
+
+
+        // 4번째 풀이(안배운 reduce 사용!)
+        // let inputValue = 12341234
+
+        inputValue.toString().split('').reduce((a, c)=> a + parseInt(c), 0)
+
+        
+    </script>
+</body>
+</html>
