@@ -71,6 +71,26 @@ function test() {
 }
 test();
 
+// let a = 10; // 전역변수
+function test() {
+    let a = 100
+    return a
+}
+test()
+console.log(a) // 10
+
+// let a = 10;
+function test() {
+    let a = 100
+    function test2() {
+        a = 1000
+    }
+    test2()
+    console.log(a) // 1000
+}
+test()
+console.log(a) // 10
+
 function one() {
     let a = 100; // 지역변수
     function two() {
@@ -86,18 +106,21 @@ one();
 // 자신의 공간에 해당변수가 ㅇ벗으면 상위 공간에서 찾습니다.
 // 못찾으면 에러입니다.
 
-//지역변수 끼리는 서로 간섭을 못합니다.(캡슐화)
-function one() { //메모장
-    let x = 10; // x는 라인수
+// 지역변수는 서로 간섭하지 않습니다.
+function test1() {
+    let x = 100
 }
 
-function two() { // 카메라
-    let x = 100; // x는 조리개값
-    console.log(x);
+function test2() {
+    // 이렇게 하면 window에 등록이 되어 버립니다.
+    // let이나 const, var 키워드를 꼭 써주세요.
+    x = 100
 }
-one();
-two();
 
+test1()
+test2()
+console.log(x)
+console.log(window.x)
 
 
 
