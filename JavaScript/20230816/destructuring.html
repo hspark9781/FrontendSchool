@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destructuring</title>
+</head>
+<body>
+    <script>
+        // let {one : myNum} = {one : 1};
+
+        // const obj = {one : 1};
+        // obj.one;
+
+
+        // let food1, food2, food3;
+        // const categories = {food1 : '과일', food2 : '채소', food3 : '육류'};
+
+        // food1 = categories.food1;
+        // food2 = categories.food2;
+        // food3 = categories.food3;
+
+        // console.log(food1, food2, food3);
+        const {food1, food2, food3} = {food1 : '과일', food2 : '채소', food3 : '육류'};
+        const {food1 : f1, food2 : f2, food3 : f3} = {food1 : '과일', food2 : '채소', food3 : '육류'};
+    </script>
+</body>
+</html>
