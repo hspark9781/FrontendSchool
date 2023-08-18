@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set</title>
+</head>
+<body>
+    <script>
+        let a = new Set('abc');
+        let b = new Set('cde');
+
+        //교집합
+        const cross = [...a].filter((value) => {
+            return b.has(value)
+        });
+
+        // 합집합
+        const union = new Set([...a].concat([...b])); // 배열로 합치기 => 중복된 값은 set이라 존재하지 않음
+
+        //차집합
+        const differ = [...a].filter((value) => { // 화살표는 중괄호도 생략하면 리턴도 생략, 중괄호가 있다면 리턴 꼭 써주기!!!!
+            return !b.has(value)
+        });
+
+
+        // lotto
+        const lottoSet = new Set();
+        while(lottoSet.size < 6) {
+            let number = parseInt(Math.random() * 45 + 1);
+            lottoSet.add(number);
+        }
+        document.write([...lottoSet].sort((a, b) => a - b));
+    </script>
+</body>
+</html>
