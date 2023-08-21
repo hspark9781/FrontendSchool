@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p></p>
+    <input type="text">
+    <button>Write Something!</button>
+
+    <script>
+        const myBtn = document.querySelector("button");
+        const myP = document.querySelector("p");
+        const myInput = document.querySelector("input");
+
+        myBtn.addEventListener("click", function() {
+            myP.textContent = myInput.value; // 많이 사용하는 속성(간편함)
+        });
+
+        myP.innerHTML = "<strong>I'm Strong!!</strong>";
+    </script>
+</body>
+</html>
