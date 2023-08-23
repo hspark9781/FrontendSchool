@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+
+        function Me() {
+            this.age = 27,
+            this.hobby = ["movie", "music", "running"]
+        }
+
+        Me.prototype.solving = function(issue) {
+            issue.levelUp();
+        }
+
+        Me.prototype.name = "현석";
+
+        function Problem() {
+            this.level = 0;
+        }
+
+        Problem.prototype.levelUp = function() {
+            this.level++;
+        }
+
+    </script>
+</body>
+</html>
