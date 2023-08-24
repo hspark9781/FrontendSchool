@@ -1,0 +1,19 @@
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.one:hover {
+  background-color: bisque;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.two:hover {
+  background-color: aquamarine;
+}/*# sourceMappingURL=026_믹스인_content.css.map */
