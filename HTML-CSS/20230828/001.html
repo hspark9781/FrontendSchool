@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <style>
+        path {
+            stroke: royalblue;
+            stroke-width: 1px;
+            /* dasharray : 조절 값이 높아질수록 라인이 점점 채워짐 */
+            stroke-dasharray: 1600;
+            /* dashoffset : 시작점, 0일때 왼쪽부터 값이 높아질수록 오른쪽으로 시작점이 바뀐다 */
+            /* stroke-dashoffset: 1000; */
+            animation: svg 2s infinite;
+        }
+        @keyframes svg {
+            from {
+                stroke-dashoffset: 1600;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg width="1000" height="182" viewBox="0 0 1000 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_214_1417)">
+        <path d="M7 137.125C7 137.125 150.6 175.425 292.3 175.425C434 175.425 537.1 161.025 573.5 85.225C626.6 -25.375 460.9 52.325 500.5 89.025C514 101.525 527.5 0.625014 471.7 6.22501C426 10.825 426.2 56.125 434.1 79.525C451.8 132.525 497.9 168.025 590 175.425C682.1 182.825 829.2 120.425 993.1 120.425" stroke="#FF9797" stroke-width="10" stroke-linecap="round"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_214_1417">
+        <rect width="1000" height="181.6" fill="white"/>
+        </clipPath>
+        </defs>
+    </svg>
+</body>
+</html>
