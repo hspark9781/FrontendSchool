@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div>
+        1. div
+        <div>
+            2. div
+            <ul>
+                <li>
+                li
+                    <p>p <strong>strong</strong></p>
+                    <strong>strong <em>em</em></strong>
+                    <p>p <em>em</em></p>
+                </li>
+                <li class="standard">
+                    li.standard
+                    <p>p <strong>strong</strong></p>
+                    <strong>strong <em>em</em></strong>
+                    <p>p <em>em</em></p>
+                </li>
+                <li>
+                    li
+                    <p>p <strong>strong</strong></p>
+                    <strong>strong <em>em</em></strong>
+                    <p>p <em>em</em></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        //부모요소찾기
+        // $('.standard').parent().css('border', '1px solid blue');
+        // js
+        const standard = document.querySelector('.standard');
+        standard.parentElement.style.border = '1px solid blue';
+
+        // border 5개: ul, div, div, body, html
+        $('.standard').parents().css('border', '1px solid blue'); 
+        // border 2개: div, div
+        $('.standard').parents('div').css('border', '1px solid blue'); 
+
+        // 가장 가까운 조상요소 탐색
+        $('.standard').closest('div').css('border', '1px solid blue'); 
+        // js
+        // const standard = document.querySelector('.standard')
+        // standard.closest('div').style.border='1px solid blue';
+
+        console.log(standard.firstelementChild);
+        console.log(standard.children);
+        consle.log(standard.lastElementChild);
+        console.log(standard.querySelectorAll('strong'));
+
+        //Array.from() : 배열로 바꿔주기
+    </script>
+</body>
+</html>

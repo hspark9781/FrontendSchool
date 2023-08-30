@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        document.addEventListener("keyup", (e) => {
+            console.log('keyup code:', e.code);
+            console.log('keyup key:', e.key);
+            // console.log('keyup keyCode:', e.keyCode); // 사용하지 않는 것을 권장한다.
+        });
+
+        document.addEventListener("keydown", (e) => {
+            console.log('keydown code:', e.code);
+            console.log('keydown key:', e.key);
+            // console.log('keyup keyCode:', e.keyCode); // 사용하지 않는 것을 권장한다.
+        });
+    </script>
+</body>
+</html>
