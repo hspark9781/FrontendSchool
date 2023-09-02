@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p>some text</p>
+    <button>통신 시작!</button>
+
+    <script>
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', xhrRequest);
+        const text = document.querySelector('p');
+        let result; // const는 반드시 초기화가 필요
+
+        function xhrRequest() {
+            const xhrObj = new XMLHttpRequest();
+            xhrObj.open('GET', 'text.txt');
+
+            xhrObj.onreadystatechange = () => {
+                if(xhrObj.readyState === 4 && xhrObj.status === 200) {
+                    result = xhrObj.responseText;
+                    // text.textContent = result;
+                    console.log(result); // text.txt
+                }
+            };
+            xhrObj.send();
+        };
+
+        xhrRequest();
+        console.log(result); // undefined  : 요청이 오기 전에 콘솔로 찍었기 때문이다.
+
+
+
+    </script>
+</body>
+</html>
