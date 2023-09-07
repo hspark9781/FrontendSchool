@@ -1,0 +1,15 @@
+.newClass{
+    width: 20%;
+    height: 100%;
+    background-color:bisque;
+}
+
+.one {
+    background-color: black;
+    color: white;
+}
+
+.line {
+    background-color: black;
+    height: 25px;
+}
