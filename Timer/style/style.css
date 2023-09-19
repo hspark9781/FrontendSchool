@@ -61,12 +61,20 @@ h2 {
 }
 
 .times input {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
     width: 80px;
     height: 80px;
+    color: white;
     margin-bottom: 40px;
     background-image: url("../images/input.svg");
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.times input::placeholder {
+    color: white;
 }
 
 .sc {
