@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머 구현</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="body">
+    <header>
+        <h1 class="logo">
+            <img src="images/weniv.png" alt="" class="logo-img">
+        </h1>
+    </header>
+    <div class="timer-box">
+    <article class="timer">
+            <h2 class="timer-title">Timer</h2>
+            <hr>
+            <div class="time-input">
+                <div class="times">
+                    <label for="hrs">HRS</label>
+                    <input type="number" id="hrs">
+                </div>
+                <img src="images/semi.svg" alt="" class="sc">
+                <div class="times">
+                    <label for="min">MIN</label>
+                    <input type="number" id="min">
+                </div>
+                <img src="images/semi.svg" alt="" class="sc">
+                <div class="times">
+                    <label for="sec">SEC</label>
+                    <input type="number" id="sec">
+                </div>
+            </div>
+            <div class="btns">
+                <button type="button" class="btn-start">START</button>
+                <button type="button" class="btn-reset">RESET</button>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p>ⓒ WENIV Corp.</p>
+    </footer>
+    <script>
+        const hours = document.querySelector("#hrs").value;
+        const min = document.querySelector("#min").value;
+        const seconds = document.querySelector("#sec").value;
+        function TIMER(){
+            PlAYTIME=setInterval(function(){
+                time=time-1000; //1초씩 줄어듦
+                min=time/(60*1000); //초를 분으로 나눠준다.
+
+            if(sec>0){ //sec=60 에서 1씩 빼서 출력해준다.
+                    sec=sec-1;
+                    Timer.value=Math.floor(min)+':'+sec; //실수로 계산되기 때문에 소숫점 아래를 버리고 출력해준다.
+                
+                }
+                if(sec===0){
+                    // 0에서 -1을 하면 -59가 출력된다.
+                    // 그래서 0이 되면 바로 sec을 60으로 돌려주고 value에는 0을 출력하도록 해준다.
+                    sec=60;
+                    Timer.value=Math.floor(min)+':'+'00'
+                }     
+        
+            },1000); //1초마다 
+        }
+    </script>
+</body>
+</html>

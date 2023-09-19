@@ -1,0 +1,112 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(68,68,255,1) 96%);
+    font-family: 'Pretendard';
+}
+
+h1,
+h2 {
+    font: inherit;
+}
+
+.logo {
+    text-align: center;
+    margin: 72px 0 60px 0;
+}
+
+.logo .logo-img {
+    max-width: 244px;
+    height: 48px;
+}
+
+.timer {
+    max-width: 400px;
+    background: linear-gradient(144deg, #5572BB 2.13%, #374B7C 102.97%);
+    border-radius: 16px;
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.40);
+    margin: 60px auto;
+    padding-bottom: 40px;
+}
+
+.timer-title {
+    padding: 48px 0 23px;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+}
+
+.time-input {
+    margin-top: 30px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.times {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.times label {
+    color:#A5B6EE;
+    font-family: 'Pretendard';
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.times input {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+    background-image: url("../images/input.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sc {
+    position: relative;
+    top: -12px;
+    width: 6px;
+    height: 26px;
+}
+
+hr {
+    background:#3D538A;
+    border: 0;
+    height: 1px;
+    width: 312px;
+}
+
+.btns {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+button {
+    border: none;
+}
+
+.btns .btn-start,
+.btns .btn-reset{
+    color: #617199;
+    width: 112px;
+    height: 48px;
+    border-radius: 50px;
+    background: #324577;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+
