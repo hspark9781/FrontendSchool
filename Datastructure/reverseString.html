@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+
+    <script>
+        // 문자열을 뒤집어보는 함수 만들기
+        function reverse(str) {
+            if(!str || typeof str !== "string" || str.length < 2) {
+                return "문자열을 입력해 주세요.";
+            }
+
+            // const backword = [];
+            // const lastIndex = str.length - 1;
+
+            // // 문자열의 마지막 요소부터 배열에 추가
+            // for(let i = lastIndex; i >= 0 ; i--) {
+            //     backword.push(str[i]);
+            // }
+
+            // // 합치기
+            // return backword.join("");
+
+            // return str.split("").reverse().join("");
+
+            return [...str].reverse().join("");
+        }
+    </script>
+</body>
+</html>
