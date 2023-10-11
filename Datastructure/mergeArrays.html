@@ -26,8 +26,8 @@
             let j = 1;
 
             // arr1Item과 arr2Item 모두 undefined가 되면 종료
-            while(arr1Item || arr2Item) {
-                if(arr1Item < arr2Item) {
+            while(arr1Item !== undefined || arr2Item !== undefined) {
+                if(arr2Item === undefined || arr1Item < arr2Item) {
                     mergedArr.push(arr1Item);
                     arr1Item = arr1[i];
                     i++;
