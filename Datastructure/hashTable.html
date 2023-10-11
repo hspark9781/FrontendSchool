@@ -58,10 +58,58 @@
                     return this.data;
                 }
             }
+
+            // 키를 이용해 값을 가져옵니다.
+            get(key) {
+                // 데이터의 주소값
+                const address = this.generateRandomHash(key);
+                const target = this.data[address];
+
+                if (target) {
+                    for (let i = 0; i < target.length; i++) {
+                        // 찾고자하는 데이터의 키와 저장된 키의 값이 동일한지 확인합니다.
+                        if (target[i][0] === key) {
+                            return target[i][1]
+                        }
+                    }
+                }
+                return undefined
+            }
+
+
+            // 모든 키값을 배열로 반환합니다.
+            keys() {
+                const keyArray = [];
+                const target = this.data.filter(item => item !== undefined);
+                // 우선 모든 데이터를 순회합니다.
+                for (let i = 0; i < target.length; i++) {
+                    // if (this.data[i]) {
+                    // linked list 가 있는경우
+                    if (target[i].length > 1) {
+
+                        for (let j = 0; j < target[i].length; j++) {
+
+                            // i 데이터 안 리스트의 j 번째 키값
+                            keyArray.push(target[i][j][0]);
+                        }
+
+                        // 같은 주소에 데이터가 하나만 있을 경우
+                    } else {
+                        keyArray.push(target[i][0][0]);
+                    }
+                    // }
+                }
+
+                return keyArray;
+            }
         }
-
-
         const hashTable = new HashTable(10);
+
+        hashTable.set('hello1', 'lions1');
+        hashTable.set('hello2', 'lions2');
+        hashTable.set('hello3', 'lions3');
+        hashTable.set('hello4', 'lions4');
+        hashTable.set('hello5', 'lions5');
     </script>
 </body>
 </html>
